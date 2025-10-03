@@ -57,13 +57,32 @@ body {
 
 /* Header */
 header {
+  position: relative;
   background: linear-gradient(135deg, var(--primary-color), #4a80f0);
   color: white;
   padding: 1.5rem 0;
   box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("images/cover.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .header-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;

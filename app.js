@@ -165,8 +165,11 @@ function createSessionCard(session) {
     const card = document.createElement('div');
     card.className = 'session-card';
 
-    if (session.isPlenumSession) {
+    const sessionType = getSessionType(session);
+    if (sessionType === 'keynote') {
         card.classList.add('plenum');
+    } else if (sessionType === 'workshop') {
+        card.classList.add('workshop');
     }
 
     const room = allData.rooms.find(r => r.id === session.roomId);

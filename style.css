@@ -548,6 +548,14 @@ footer {
   margin-top: 3rem;
 }
 
+.footer-link {
+  color: #5b9aff;
+}
+
+.footer-link:hover {
+  color: #c33;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header-logo {

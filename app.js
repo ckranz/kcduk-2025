@@ -3,6 +3,17 @@ const API_URL = 'https://sessionize.com/api/v2/lxonkgvd/view/All';
 let allData = null;
 let filteredSessions = [];
 
+// Get session type (keynote, workshop, or talk)
+function getSessionType(session) {
+    if (session.isPlenumSession) {
+        return 'keynote';
+    }
+    if (session.title && session.title.toLowerCase().startsWith('workshop:')) {
+        return 'workshop';
+    }
+    return 'talk';
+}
+
 // Fetch data from Sessionize
 async function fetchSchedule() {
     try {
@@ -23,6 +34,9 @@ async function fetchSchedule() {
 function initializeFilters() {
     const roomFilter = document.getElementById('room-filter');
     const dayFilter = document.getElementById('day-filter');
+    const searchInput = document.getElementById('search-input');
+    const filterToggle = document.getElementById('filter-toggle');
+    const filters = document.getElementById('filters');
 
     // Populate rooms
     allData.rooms.forEach(room => {
@@ -44,19 +58,63 @@ function initializeFilters() {
     // Add event listeners
     roomFilter.addEventListener('change', filterSchedule);
     dayFilter.addEventListener('change', filterSchedule);
+    searchInput.addEventListener('input', filterSchedule);
 
-    document.getElementById('filters').style.display = 'flex';
+    // Type filter checkboxes
+    const typeCheckboxes = ['type-keynote', 'type-talk', 'type-workshop'];
+    typeCheckboxes.forEach(id => {
+        document.getElementById(id).addEventListener('change', filterSchedule);
+    });
+
+    // Toggle filters visibility
+    filterToggle.addEventListener('click', () => {
+        filters.classList.toggle('filters-collapsed');
+        filters.classList.toggle('filters-expanded');
+        filterToggle.classList.toggle('active');
+    });
+
+    document.getElementById('filter-container').style.display = 'block';
 }
 
 // Filter schedule based on selected filters
 function filterSchedule() {
     const roomFilter = document.getElementById('room-filter').value;
     const dayFilter = document.getElementById('day-filter').value;
+    const searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+
+    // Get selected types
+    const selectedTypes = [];
+    if (document.getElementById('type-keynote').checked) selectedTypes.push('keynote');
+    if (document.getElementById('type-talk').checked) selectedTypes.push('talk');
+    if (document.getElementById('type-workshop').checked) selectedTypes.push('workshop');
 
     filteredSessions = allData.sessions.filter(session => {
+        // Room and day filters
         const matchesRoom = !roomFilter || session.roomId == roomFilter;
         const matchesDay = !dayFilter || session.startsAt.startsWith(dayFilter);
-        return matchesRoom && matchesDay;
+
+        // Type filter
+        const sessionType = getSessionType(session);
+        const matchesType = selectedTypes.length === 0 || selectedTypes.includes(sessionType);
+
+        // Search filter
+        let matchesSearch = true;
+        if (searchQuery) {
+            const titleMatch = session.title?.toLowerCase().includes(searchQuery);
+            const descriptionMatch = session.description?.toLowerCase().includes(searchQuery);
+
+            // Get speaker names for this session
+            const speakers = session.speakers.map(speakerId =>
+                allData.speakers.find(s => s.id === speakerId)
+            ).filter(s => s);
+            const speakerMatch = speakers.some(speaker =>
+                speaker.fullName?.toLowerCase().includes(searchQuery)
+            );
+
+            matchesSearch = titleMatch || descriptionMatch || speakerMatch;
+        }
+
+        return matchesRoom && matchesDay && matchesType && matchesSearch;
     });
 
     displaySchedule();
@@ -131,20 +189,20 @@ function createSessionCard(session) {
     card.innerHTML = `
         <div class="session-header">
             <h3 class="session-title">${session.title}</h3>
-            ${room ? `<span class="session-room">${room.name}</span>` : ''}
         </div>
-        <div class="session-summary">
-            <div class="session-time">${timeRange}</div>
+        <div class="session-meta">
             ${speakers.length > 0 ? `
                 <div class="session-speakers-compact">
                     ${speakers.map(speaker => `
                         <div class="speaker-compact">
                             ${speaker.profilePicture ? `<img src="${speaker.profilePicture}" alt="${speaker.fullName}">` : ''}
-                            <div class="speaker-name">${speaker.fullName}</div>
+                            <span class="speaker-name">${speaker.fullName}</span>
                         </div>
                     `).join('')}
                 </div>
             ` : ''}
+            <span class="session-time">${timeRange}</span>
+            ${room ? `<span class="session-room">${room.name}</span>` : ''}
         </div>
         <div class="session-details">
             ${session.description ? `<p class="session-description">${session.description}</p>` : ''}

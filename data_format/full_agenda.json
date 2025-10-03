@@ -1,0 +1,1390 @@
+{
+  "sessions": [
+    {
+      "id": "999443",
+      "title": "Keynote: Building a successful Cloud Native Business on Open Source",
+      "description": "How can companies - startups in particular - build a successful business when they give code away for free? Drawing on Liz’s experience with the Cilium project and as former chair of the CNCF’s TOC, and learnings from Isovalent’s path as a business founded around open source technologies, this talk explores how shared values can lead to collective success, draws out the relationships between project health and vendor viability, and gives practical tips to help balance business goals with the needs of end users, contributors and maintainers alike. ",
+      "startsAt": "2025-10-21T09:45:00",
+      "endsAt": "2025-10-21T10:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["ad289415-0cb2-41f9-8d07-de172740844f"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "999442",
+      "title": "Keynote: TBD",
+      "description": null,
+      "startsAt": "2025-10-21T10:05:00",
+      "endsAt": "2025-10-21T10:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["6421dbe4-7c31-486e-9068-e8e7c363159c"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "999445",
+      "title": "Keynote: Do Platform Engineers Need to Care About GenAI? (Spoiler Alert, Yes!)",
+      "description": "GenerativeAI changes everything. GenerativeAI changes nothing. \r\n\r\nSometimes I think we’ve collectively lost our minds when we talk about GenAI. I don’t want to add to the hype, there’s already too much nonsense out there. \r\n\r\nThis talk is grounded in the reality of the technology today. We’re going back to basics, with a sprinkle of AI Agents. Let’s talk about Developer Productivity, Security, Reliability, User Experience… the unchanging fundamentals of Platform Engineering that are as important as ever in the world of GenAI. \r\n\r\nWhat role do Platform Engineers have to play in the inevitable AI transformation that’s coming? You might be surprised how significant your role is! In this talk Hannah will propose that Platform Engineering is critical for success with GenAI, and will share how your team can get started today.",
+      "startsAt": "2025-10-21T10:25:00",
+      "endsAt": "2025-10-21T10:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["c3234b94-4e7d-46fe-85de-8de4881c0952"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1044322",
+      "title": "Workshop: Multi Cluster Kubernetes Made Simple with Cilium Cluster Mesh",
+      "description": "Running Kubernetes at scale often means running more than one cluster. Beyond certain node counts, Kubernetes becomes easier to manage when split into multiple clusters. Large organisations also distribute clusters to align with business units, reduce the blast radius of control plane failures, meet regulatory or multicloud requirements, or provide low-latency access to users in different regions.\r\n\r\nBut once you move to a multi-cluster model, new challenges appear. Services need to talk across clusters, policies must be applied consistently, and teams want failover and load balancing without rewriting application logic. Stretching a single cluster across sites introduces fragility, and manually stitching clusters together is complex and error-prone.\r\n\r\nThis is where Cilium Cluster Mesh comes in. Built on eBPF, it extends Cilium beyond a single cluster by:\r\n\r\n- Enabling network policies that span clusters and can reference cluster identity.\r\n- Providing transparent cross-cluster service discovery and load balancing, including locality-aware routing and automatic failover.\r\n- Treating multiple clusters as one secure, connected fabric while still respecting failure domains.\r\n\r\nIn this workshop, attendees will get hands-on experience with Cilium Cluster Mesh. Starting from a baseline Cilium deployment, they will build a multi-cluster environment, connect services across clusters, apply policies globally, and validate load balancing and failover scenarios.\r\n\r\nBy the end of the session, participants will understand how Cilium Cluster Mesh helps platform teams address the real-world challenges of multi-cluster Kubernetes, whether for high availability, multicloud strategies, or regional scale-out.",
+      "startsAt": "2025-10-21T11:00:00",
+      "endsAt": "2025-10-21T12:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["58c69f85-4e12-4e6e-b36e-1e3fdf302b15"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62298,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "951767",
+      "title": "GitOps Evolution Through the Lens of a Flux maintainer",
+      "description": "In this session, Stefan will share his experience as a maintainer of Flux CD (a CNCF graduate project) and how he has seen GitOps evolve over the years. He will start with a brief history of GitOps from the early days of Flux CD to mainstream adoption.\r\n\r\nStefan will then discuss the current state of GitOps practices and the latest developments of Flux Operator around the Open Container Initiative (OCI), where OCI Artifacts are becoming the de facto standard for distributing the desired state of Kubernetes clusters and applications. \r\n\r\nFinally, Stefan will share his thoughts on the future of GitOps in the context of Agentic AI. He will showcase the new Flux MCP Server, a tool that connects AI assistants to Kubernetes clusters, and discuss the security implications of using AI in production.",
+      "startsAt": "2025-10-21T11:15:00",
+      "endsAt": "2025-10-21T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["c685186b-a31e-4d1d-aa44-98d08978ef74"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "908485",
+      "title": "Kubernetes Cluster Architecture Demystifyed",
+      "description": "Kubernetes is the most accessible it's ever been, with an incredible variety of easy options to deploy it on the cloud or on a local machine. However, it remains just as difficult to master with it's own vocabulary, a whole heap of moving parts, and a intimidating reputation. \r\n\r\nThis talk is is her guided tour into Kubernetes cluster architecture aiming to give attendees a big picture view of Kubernetes, and a jumping off point to dive deeper. It will cover etcd, kubelet, CNI plugins and the other core Kubernetes components, explaining how everything fits together and why each component matters.",
+      "startsAt": "2025-10-21T11:15:00",
+      "endsAt": "2025-10-21T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["3b8be3c3-aa3c-4ef1-bb59-5b40385f09a7"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "948891",
+      "title": "Universal Platform Scheduling: Taking GitOps Beyond Kubernetes",
+      "description": "GitOps has transformed Kubernetes management. When developing Kratix, an open-source platform framework, we initially focused exclusively on scheduling GitOps workloads to Flux and Argo to simplify resource management. However, as user workflows grew more sophisticated, we had to adapt Kratix extensively, introducing complex scheduling capabilities, support for various Git providers and pull request flows, as well as integrations with external storage such as AWS S3 buckets.\r\n\r\nUnexpectedly, these enhancements expanded Kratix's applicability beyond Kubernetes, paving the way for Kratix to orchestrate resources across Terraform, Ansible, Backstage, and more. By adopting and refining a universal scheduling pattern, we discovered powerful new applications for GitOps methodologies across different domains.\r\n\r\nJoin us as we share our journey, detailing how thinking beyond Kubernetes-centric constraints enabled versatile GitOps applications, innovation and flexibility across the landscape",
+      "startsAt": "2025-10-21T11:55:00",
+      "endsAt": "2025-10-21T12:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "b6430939-6d93-49ff-a9e0-32519277a240",
+        "afac93e4-3f3a-4864-9207-82e9d391b31f"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "917096",
+      "title": "Taking cloud-native offline",
+      "description": "Designing a cloud-native solution so that it can also be run in air-gapped or on-prem environments can be difficult. This presentation will take you through some of the requirements you will have to meet along with approaches and tooling to help you meet them.\r\n\r\nIt will be based on my experiences of deploying various products across multiple air-gapped environments with differing level of restriction available - from simple caching registries and self-signed certificates all the way up to full blown Faraday cages. Examples of use cases from different environments will be shown along with the tooling or technique used to resolve that problem. This will help those both attempting to deploy existing products and those designing new products to do it in a way that is easily portable.\r\n\r\nFinally we will look at some of the upcoming work in the cloud-native ecosystem that may help in this area.",
+      "startsAt": "2025-10-21T11:55:00",
+      "endsAt": "2025-10-21T12:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["2a0459a8-4c6c-4aea-b72d-8047f40506ea"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "937077",
+      "title": "Payday Pandemonium: How Monzo Survives a Daily Self-Inflicted DDoS",
+      "description": "What do you do if you’ve built a product feature which DDoSes your system at 4pm every day?\r\n\r\nIn this talk, Dom and Miles will talk through the history of Monzo’s Get Paid Early feature, allowing you to get paid a day early at 4PM and how it impacts our platform. We’ll explore the techniques and methods we’ve used to make Get Paid Early seamless such as pre-emptive scaling and load shedding. We’ll also talk about all the fun incidents and challenges we had along the way.\r\n\r\nWe’ll cover how we use tools like Prometheus and OTel tracing to predict the level and targets of load we need to preemptively scale for and how we build a cluster capable of scaling out to 3x the size when needed, as we brace for this daily spike in traffic.\r\n",
+      "startsAt": "2025-10-21T13:30:00",
+      "endsAt": "2025-10-21T14:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "e3a7c06a-faef-453e-8fb3-de6bc993f3b3",
+        "5d564e84-3e22-4afd-bb08-03a4a43ce367"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "938552",
+      "title": "The Immutable Lightness of an Edge Platform",
+      "description": "Edge platforms are remote, resource-constrained, and mission-critical—making them ideal candidates for an immutable architecture. Edge environments demand resilience, security, and operational simplicity. This talk reimagines Kubernetes at the edge through a radical embrace of immutability, exploring how purpose-built, read-only operating systems, ephemeral workloads, and stateless infrastructure can transform the edge from a liability into a strength.\r\nInspired by Kundera’s existential lens, we’ll explore the philosophical and practical implications of immutability at the edge, using CNCF projects like k0s, Kairos, and Cluster API.we’ll architect a platform where every layer—from firmware to containers—is reproducible and replaceable, not mutable.\r\nWe'll see how Immutable builds can reduce attack surfaces, simplify updates, and achieve true zero-touch provisioning.\r\nJoin us to challenge the status quo—and embrace the lightness of being immutable.\r\n",
+      "startsAt": "2025-10-21T13:30:00",
+      "endsAt": "2025-10-21T14:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "0a1cdc66-fd11-42cf-a1f2-91466b04efc9",
+        "a629458c-a0db-4d84-b21c-162ba1c9aece"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1044330",
+      "title": "Workshop: Owning the Stage",
+      "description": "Have you ever wanted to be on stage, but feel uncomfortable in front of many people? Or are you already a speaker and would like to improve your stage presence? Then this is the workshop for you!\r\n\r\nFolks often underestimate how the way you carry yourself can make all the difference between an engaging talk and a total snoozefest. And this isn’t only relevant to public speaking. But any face to face interactions like meetings or social gatherings can benefit from a bit of “stage presence”.\r\n\r\nIn this workshop, we will learn how to be truly present and connect with our bodies, packed with exercises and games, commonly used in theatre productions. So at your next presentation, you can use these techniques to draw in your audience.",
+      "startsAt": "2025-10-21T13:30:00",
+      "endsAt": "2025-10-21T15:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["1559cccc-ed7c-4296-973d-3b05f3c3d25e"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62298,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "951596",
+      "title": "Baillie Gifford’s Kubernetes Cloud Journey",
+      "description": "In a bid to modernise their Kubernetes estate and to become more Cloud Native, Baillie Gifford recently migrated the entirety of their on-prem Kubernetes platform into the Cloud.  \r\n\r\nMoving from imperative scripts and pipelines to IaC with Terraform and GitOps with FluxCD, not only has the platform been enhanced, but the workflow too.  \r\n\r\nThe talk will cover aspects of previous pain points with the older platform, how we went about designing and building the new platform, and a little on the journey to migrate over 1500 workloads.  \r\nWe will look at the improvements we made, as well as lessons learned and what we are looking towards next.  ",
+      "startsAt": "2025-10-21T14:10:00",
+      "endsAt": "2025-10-21T14:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "bacb8e89-4294-4d77-aed1-698f578aeeb1",
+        "1b09e20f-a560-4af9-ab77-bf271a3b0a17"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "885118",
+      "title": "Kubernetes at the Edge – Come see It In Action !",
+      "description": "Edge computing is still a fairly new area in the cloud native tech industry and is growing fast. As computing moves to the edge, what does Kubernetes look like beyond the cloud, and why does it matter?\r\n\r\nThis session features a live demo with a Raspberry Pi, camera, and real-time AI detection. Watch as our edge device identifies raised hands, sends data to a Kubernetes cluster via KubeEdge, and visualizes results instantly.\r\n\r\nWe'll explore:\r\n- Edge Kubernetes challenges: connectivity, resources, security\r\n- KubeEdge's approach to decentralized workloads\r\n- Real-world applications across industries\r\n\r\nJoin us to see how AI, Kubernetes, and edge computing converge to enable powerful new possibilities.",
+      "startsAt": "2025-10-21T14:10:00",
+      "endsAt": "2025-10-21T14:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "17483812-e926-4a70-b592-729e384e0ab2",
+        "02be6e34-1864-417f-b157-2cdb63e53d2a"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "949133",
+      "title": "Kilts at the Front, Chaos in the Back: The reality of K8s Network Security",
+      "description": "From zero-trust promises to cloud-native firewalls, Kubernetes networking often looks secure—like a proud kilted parade at the castle gates. But behind the polished dashboards and encrypted ingress lies a noisy, flat, and over-permissive reality.\r\n\r\nIn this talk, we’ll walk through 7 common Kubernetes network attack paths and 7 real-world defenses, guided by a layered model inspired by Scottish patterns—where each “stripe” represents a layer of network trust and exposure. From pod-to-pod east-west traffic to DNS tunneling and egress escapes, we’ll show how attackers actually move through Kubernetes clusters, and how defenders can respond across the kill chain.\r\n\r\nExpect a practical breakdown of:\r\n\r\nMisconfigurations attackers rely on (e.g. lack of NetworkPolicies, open egress, flat service meshes).\r\nProtection strategies at each stage: policy, segmentation, zero trust, identity-aware routing.\r\nDetection tips: using tools like Cilium, Falco, or eBPF to observe and disrupt suspicious flows.\r\nMuch like a ceilidh, Kubernetes traffic can look like organized chaos—until someone gets hurt. Let’s learn how to spot the risky moves, tighten the perimeter and the core, and make sure our clusters don’t just dress for battle, but fight smart too.",
+      "startsAt": "2025-10-21T15:10:00",
+      "endsAt": "2025-10-21T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["c9588f7b-33d1-4c3c-8166-f55314ea756c"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "915467",
+      "title": "Embracing Karpenter to scale, optimize & upgrade Kubernetes",
+      "description": "Kubernetes is a very powerful container orchestrator, but it leaves many implementation options open for the operator, for example doesn’t handle compute autoscaling out of the box. While Cluster Autoscaler has long been the go-to option, Karpenter offers more modern and flexible alternative for node lifecycle management. The project has come a long way in the last few years and was also adopted by the CNCF/SIG Autoscaling, enabling cross industry adoption. \r\nIn this talk, I’ll introduce Karpenter, walk through setting it up, and go over use cases where it improves efficiency, cost optimization, helps with compliance and patching. Expect practical demos and hands-on examples that highlight how Karpenter dynamically adapts to workload needs and simplifies cluster operations.\r\nWhether you're running Kubernetes in production or just experimenting with it, this session will help you get more from your infrastructure with less effort.",
+      "startsAt": "2025-10-21T15:10:00",
+      "endsAt": "2025-10-21T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["a1fcd812-ecfa-4155-8184-b2cc9dac4574"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1044320",
+      "title": "Workshop: Working Code Wins: Win Big With a Cloud Native Hackathon Starter Pack",
+      "description": "It can be easy to look at the CNCF landscape and think that the CNCF is only focused on tools and technologies. However, the Cloud Native Maturity Model helps re-centre the conversation on the real mission: Business outcomes, people, process, and policy – and of course, also technology.\r\n\r\nJoin this workshop to learn about our experiences running a company-wide hackathon using only open source software, which not only launched innovative business ideas but also created a whole new awareness and adoption of cloud native technologies.\r\n\r\nYou will get hands-on with creating effective developer experience using a Backstage Portal, managing infrastructure, and everything in between. Most importantly, at the end of this session, you will have the working platform blueprint to take back ready for hacking in your organisation.",
+      "startsAt": "2025-10-21T15:10:00",
+      "endsAt": "2025-10-21T16:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["c66a7fd8-1fa2-42f9-b324-5f511244182b"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62298,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "952434",
+      "title": "Supply Chain Security and the Real World: Lessons From Incidents",
+      "description": "Supply chain security is becoming more and more important, but it is often talked about in abstract and general terms that do little to help the average organisation.\r\n\r\nSophisticated -- and not-so sophisticated -- breaches and attacks in recent years have taught us a lot about the soft spots that attackers target. We can turn these insights into actionable advice for the average devops team.\r\n\r\nThis talk will look at some real world examples of supply chain compromises and translate the lessons into concrete actions that you can take today to help secure your builds and pipelines.\r\nThe incidents we’ll look at include the codecov breach and the recent changed-files attack. I’ll show how straightforward changes to build processes and CI/CD settings can help prevent similar attacks and mitigate the effects when dependencies are breached.",
+      "startsAt": "2025-10-21T15:50:00",
+      "endsAt": "2025-10-21T16:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["463ce4de-045d-4af7-8744-d58855743871"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "948333",
+      "title": "No Pending state anymore; Reserved capacity manager",
+      "description": " In a shared Kubernetes cluster, when a Guaranteed QoS Pod demands more resources, Burstable/BestEffort Pods are first in line for eviction. But what happens next? If the cluster lacks spare capacity, the evicted Pod enters a Pending state—waiting for cluster-autoscaler to react. This can cause 10–15 minutes of downtime while a new node spins up. Reserved Capacity Manager solves this by keeping “hot spare” capacity ready, ensuring your workloads stay responsive. Join this talk to learn how to avoid Pending states and eliminate scaling delays!",
+      "startsAt": "2025-10-21T15:50:00",
+      "endsAt": "2025-10-21T16:20:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["91861600-b22f-4056-964e-d6d96ce14b1d"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "999438",
+      "title": "Keynote: Many Cooks, One Platform: Balancing Ownership and Contribution for the Perfect Broth",
+      "description": "When I started contracting with the Dutch government to build a new internal developer platform, I found myself navigating competing demands from different teams. Development teams wanted support tailored to their processes, neighboring infrastructure teams aimed to protect their areas of responsibility, and management expected visible progress. These conflicting priorities kept pulling my team in multiple directions, making it challenging to stay aligned and focused.\r\n\r\nSince I have a background in Developer Relations, I soon made it my goal to engage all involved parties, giving users a sense of ownership and collaboration, while keeping the platform cohesive.\r\n\r\nIn this talk, I’ll share the tools and processes that helped address these challenges. I’ll provide practical insights for aligning diverse stakeholders. If you’ve ever faced the challenge of “too many cooks” this session will show how to turn competing demands into a recipe for success.",
+      "startsAt": "2025-10-22T09:45:00",
+      "endsAt": "2025-10-22T10:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["3a870927-756c-4acc-ad23-b277de123f65"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "999441",
+      "title": "Keynote: A talk about talks",
+      "description": "In this session, we’re going to get a bit meta and talk about giving talks, why you should do it, and how to get started. We’ll bust some persistent myths about speaking at conferences, show how everyone has something worth sharing, and let you in on some of the secrets of how conference talk applications work. At the end of it all, hopefully this session will help you take the first step toward the stage.",
+      "startsAt": "2025-10-22T10:05:00",
+      "endsAt": "2025-10-22T10:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["47bcaf1f-c612-41e4-82b0-0d90fff99785"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "999446",
+      "title": "Keynote: This Lying Has To Stop: Keeping AI Honest with OpenTelemetry",
+      "description": "Building an automated engineering journal sounds straightforward enough. Git commits provide facts, AI adds intelligent context, and you get queryable documentation about the history of your project without manual work. Except in development, the AI assistant lies. Confidently.\r\n\r\nWhen debugging breaks down because your AI assistant hallucinates, OpenTelemetry provides the observability needed to understand what actually happened versus what your AI claimed happened.\r\n\r\nThe session follows Commit Story, an AI-augmented engineering journal, through authentic debugging disasters, using live demos to show how these lies could have been caught sooner. This talk will explore traces of commit-triggered AI calls, teach techniques to verify response trustworthiness, and share guardrails that help prevent AI deception in the first place.",
+      "startsAt": "2025-10-22T10:25:00",
+      "endsAt": "2025-10-22T10:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["a9d52d6b-d0c6-4a83-b8cb-22e3f0a2c6df"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1044328",
+      "title": "Workshop: Making vulnerability scoring work in practice",
+      "description": "By now, everyone knows how to use Trivy to scan Docker images for known CVEs. These CVEs are typically prioritized based on their severity or CVSS score. However, not all CVEs provide a CVSS score, not all vulnerabilities have a known fix available, and - worse still - some vulnerabilities can only be exploited if they have public internet access in Kubernetes.\r\n\r\nI’m building the OSS tool exploit-check.sh as a way to complement Trivy findings with EPSS (exploitability) scoring as well as KEV data. By understanding how likely a workload is to be exploited, and whether there are known exploited vulnerabilities in the wild, we can make better, more informed decisions using a vulnerability assessment risk matrix.\r\n\r\nTo take proactive action, we will explore the use of OPA and OPA Gatekeeper to prevent the exploitation of these accepted risks within our Kubernetes environment.",
+      "startsAt": "2025-10-22T11:00:00",
+      "endsAt": "2025-10-22T12:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["21ec4da4-b95c-4e5b-a052-f3439917624b"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62298,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "949535",
+      "title": "From Panic to Peace: Making K8s Controller Observability Suck Less",
+      "description": "Your infra runs on K8s, and your controllers and custom resources hum happily. Until they don't. One change later and… UH OH. The logs are a never-ending scroll of problems, dashboards flash like disco lights, and you are knee-deep in debugging hell. You check your custom resources, and they offer no guidance. You eventually fix it, add better error messages, and feel proud. And then it breaks again, with a brand new, even less helpful error.\r\nWhy is this so hard?\r\nIn this talk, Derik, a prolific controller-writer, and Cat, a regular listener to DevOps meltdowns, will walk you through tested strategies for making your K8s resources less mysterious and more manageable. You will learn how to:\r\n- Add meaningful, traceable errors\r\n- Make events and status your best friends\r\n- Build dashboards that humans want to use\r\n- Set up business-relevant alerts, not just CPU spikes\r\n- Automate away the slog using AI\r\nMake your controller logs and custom resource statuses a source of clarity, not chaos!",
+      "startsAt": "2025-10-22T11:15:00",
+      "endsAt": "2025-10-22T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "aec136af-88b2-4835-ba56-43bb16c69b72",
+        "40368e26-0b2b-4c08-a9ab-b4852adfb2ad"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "951947",
+      "title": "OpenTelemetry Signals: Using the Right Tool for the Right Purpose",
+      "description": "OpenTelemetry is empowering the cloud native industry to leave behind the old concept of isolated “observability pillars”, enabling different signals —traces, baggage, metrics, logs, and more recently profiles— to be produced as a set of correlated, contextualised streams of telemetry data. This allows us to understand complex distributed systems more effectively. However, do you always know when to use one signal over another when instrumenting workloads?\r\n\r\nIn this talk, we'll explore how the very structure and aggregation of these signals inherently carry meaning. From the choice of metric instruments, to the relationships between spans in a trace. They all have a purpose. Their correct usage, paired with other OpenTelemetry concepts like context, resources, or semantic conventions, allows us to describe our systems more efficiently.\r\n\r\nWe'll dedicate a special focus to logs, and the recent convergence with events as a type of structure log type. Learn how this shift is unlocking powerful new instrumentation possibilities thanks to complex attribute values, like nested objects and arrays, crucial for emerging use cases like Gen-AI observability and client-side instrumentation.\r\n\r\nJoin us to understand the profound depth of information your OTel signals can unlock for your workloads, and understand why logs are not just a “legacy signal”.\r\n",
+      "startsAt": "2025-10-22T11:15:00",
+      "endsAt": "2025-10-22T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "ab68efe8-5b90-40b6-bf36-e3b9a0c32256",
+        "d087e6f6-0e80-4ce1-950a-b7db905043b2"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "951568",
+      "title": "Meshvolution: 20 Versions of Istio in Prod",
+      "description": "Skyscanner adopted Istio to provide a resilient Kubernetes architecture - enabling an architecture that (barring some not so minor incidents) has allowed our services and platform to both roll out changes in a safe manner over the past 6 years as well as make use of a number of the other benefits of service meshes.\r\n\r\nIt hasn't been without its challenges however - we adopted Istio in prod all the way back at Istio 1.4, a very different time, as those who feel nostalgic at the mention of Mixer, Citadel, Pilot, and Galley will be aware. We were even forced to create our own architecture to support a multi-cluster mesh before this was supported upstream. Over time we've reduced the areas where we were \"Doing a Skyscanner\" and moved ever closer to vanilla Istio, allowing us to more easily upgrade and adopt upstream functionality.\r\n\r\nJoin us for the tale of the challenges from early adopters to 20+ versions of upgrades later, the benefits to our platform, and where we're going next.",
+      "startsAt": "2025-10-22T11:55:00",
+      "endsAt": "2025-10-22T12:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "12fbb300-3cdf-41b2-9372-cff28721b607",
+        "db7e46af-b53d-4f18-b596-1a046346439a"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "928962",
+      "title": "Performance-Aware Autoscaling on Kubernetes",
+      "description": "Traditional autoscaling in Kubernetes often relies on CPU utilization—but what if the CPU is underutilized because the processor is running at a reduced frequency? What about if there are other more meaningful metrics we can use? How can you spot performance issues? In latency-sensitive environments, this can lead to premature scaling, unpredictable tail latencies, and wasted compute resources.\r\nIn this talk, we’ll introduce tools you can use to spot performance issues in your applications called aperf. Moreover, you'll learn why it's important to keep your stack up to day, why concurrency is crucial, and how projects like KEDA and Karpenter can help you run efficient Kubernetes clusters.",
+      "startsAt": "2025-10-22T11:55:00",
+      "endsAt": "2025-10-22T12:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["5017a2fc-3443-4b88-9932-45ea1f161256"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "882524",
+      "title": "The Cluster API Migration Retrospective: Live migrating hundreds of clusters to Cluster API",
+      "description": "Cluster API has become the industry standard for managing Kubernetes clusters, taking care of the heavy lifting of cluster operations.\r\nHowever, migrating to Cluster API can still be challenging, especially for organisations heavily invested in existing cluster management tools.\r\nThis talk presents Giant Swarm's journey from a custom operator-based Kubernetes cluster management system to Cluster API, including the live migration of hundreds of production clusters of major enterprises such as adidas and Vodafone.\r\nThe driving force for the migration will be covered, followed by challenges encountered during the migration, concluding with a discussion of the observed benefits and differences seen post-migration.\r\nAttendees will come away with an understanding of potential risks and challenges to be considered when migrating to Cluster API, a better insight into the expectations and efforts required, and the benefits of using this upstream project.\r\n",
+      "startsAt": "2025-10-22T13:30:00",
+      "endsAt": "2025-10-22T14:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["6b212f44-0bbe-4e5d-a2e9-e555a3c84d42"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "948250",
+      "title": "No YAML? No Problem: Orchestrate Kubernetes Workflows the Easy Way with Python",
+      "description": "Argo Workflows is a powerful workflow orchestration engine, built for Kubernetes. But like most systems built on Kubernetes, you usually use YAML to define resources. In Argo Workflows, these Workflow resources include complex DAGs (Directed Acyclic Graphs), with dependencies and parameters being passed between tasks, and artifacts being uploaded to storage. If you’re trying to express this imperative workflow logic using YAML, you’re in for a rough ride – a single Workflow can eventually span thousands of lines, leaving you lost in a sea of indentation and key-value pairs whenever you want to make changes.\r\n\r\nEnter Hera, the Python SDK for Argo Workflows. By treating Python functions as the unit of work that run in separate pods, orchestrating them becomes as effortless as calling the functions to create a DAG. With Hera, you get reusability and unit testing for free, something not possible in YAML, and you don’t need to use separate languages for your business logic and orchestration logic, keeping everything under one roof.\r\n\r\nIn this session, you will:\r\n\r\n* Understand the fundamentals of Argo Workflows and workflow orchestration\r\n* Learn how Hera brings Kubernetes power to Python developers\r\n* Explore the best practices to write Workflows in Hera\r\n* Walk through a data science scenario workflow\r\n\r\nIf you're tired of wrestling with YAML but want to run your Python jobs on Kubernetes, this session is for you!\r\n",
+      "startsAt": "2025-10-22T13:30:00",
+      "endsAt": "2025-10-22T14:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["c4d8d2a5-e5c6-43f6-b2a4-e9724ee27b4f"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "1044318",
+      "title": "Workshop: Introduction to vCluster: Building Internal Developer Platforms",
+      "description": "The workshop introduces participants to vCluster, demonstrating how to create and manage virtual Kubernetes environments for multiple development teams. Attendees will learn to use vCluster effectively, starting with basic setups and progressing to more advanced configurations. Throughout the workshop, participants will take on the perspective of a platform engineering team, making decisions and implementing solutions to serve the needs of various development groups within an organization.\r\n\r\nKey Focus Areas:\r\n- Introduction to vCluster and virtual Kubernetes clusters\r\n- Setting up and configuring  virtual Kubernetes clusters\r\n- Managing multiple development environments\r\n- Implementing shared services and optimizing resources\r\n- Enhancing developer workflows with self-service provisioning\r\n\r\nParticipants will:\r\n- Set up and configure virtual Kubernetes clusters\r\n- Learn to manage multiple team environments efficiently\r\n- Explore resource optimization and cost reduction strategies\r\n- Implement progressive improvements to virtual cluster setups\r\n- Understand vCluster's role in enhancing developer productivity\r\n\r\nIMPORTANT: Reminders and prerequisites:\r\n\r\nPlease register for a free account on KillerCoda: https://killercoda.com <- workshop will be run via this service\r\n\r\nFor attendees who want to run it locally on their machines:\r\nHave a local KIND Kubernetes cluster installed: https://kind.sigs.k8s.io/docs/user/quick-start/\r\n\r\nInstall the vcluster CLI: https://www.vcluster.com/docs/vcluster/deploy/control-plane/container/basics#deploy-vcluster",
+      "startsAt": "2025-10-22T13:30:00",
+      "endsAt": "2025-10-22T15:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["45624781-05c7-4e3f-bb76-2ff093b63d55"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62298,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
+      "id": "943458",
+      "title": "Immutable All the Way Down - Using System Extensions to ship Kubernetes",
+      "description": "This talk will demonstrate a modern method of deploying container runtimes and Kubernetes onto a node, using systemd's system extension feature. System extensions are self-contained, immutable, verifiable, distribution-independent disk images that are ideal for this purpose. The talk will then show how systemd together with Kured can totally automate in-place updates of these system extensions.\r\n\r\nThe talk will include multiple live demos, from a single node deployment to cover system extension basics to a full-blown Kubernetes cluster deployed with Cluster API, which will then be updated live.\r\n\r\nWhile all demos will use Flatcar Container Linux, an immutable special purpose OS optimised for container workloads, the mechanisms demonstrated are generic and could be applied to any Linux distribution.",
+      "startsAt": "2025-10-22T14:10:00",
+      "endsAt": "2025-10-22T14:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["a7e4d533-0d9a-47d9-a5ac-cdf648d56fe7"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "949962",
+      "title": "Your Containers Aren’t Alone: Demystifying Container Isolation",
+      "description": "How do you know your container workloads aren’t being viewed or altered by other workloads running in the same environment? Many technologies promise to isolate workloads from each other, but what do these technologies actually do, and which one is right for your workloads? In this talk we will discuss why people use multi-tenency to run containers from multiple users in the same cluster, the risks of multi-tenency, and what we can do about these risks. We will survey technologies with different levels of container isolation, from relying on namespaces to using virtual machines to using separate hardware. Each level of isolation is right for some use cases, so we will discuss the pros and cons of each. You’ll come away with a new understanding of how you can keep containers secure from each other and an understanding of the tradeoffs of various container isolation technologies.",
+      "startsAt": "2025-10-22T14:10:00",
+      "endsAt": "2025-10-22T14:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["68b62784-1bf3-47ba-a6c5-dc9bbfd77ef8"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "950375",
+      "title": "What EU Tech Regulations Mean for Cloud-Native Teams",
+      "description": "Cloud-native engineering is moving fast, but so is regulation. The EU is rolling out new laws that directly affect how we build and operate infrastructure. This talk breaks down what actually matters for engineering teams.\r\n\r\nWe’ll cover the real impact of regulations like the AI Act, NIS2, the Data Act, DSA, and DORA. What do these mean for the way we deploy models, handle data, manage cloud services, and ensure resilience?\r\n\r\nWe’ll look at things like:\r\n\r\nWhat the AI Act means for teams working with LLMs and AI tooling\r\n\r\nWhat NIS2 changes around monitoring, logging, and security response\r\n\r\nHow the Data Act affects APIs and data ownership in your systems\r\n\r\nWhat DORA means if you're in fintech or handling critical infrastructure\r\n\r\nWhat kind of changes the Digital Services Act introduces for platforms\r\n\r\nYou’ll leave with practical takeaways for how to build compliant systems without slowing down engineering. No legal speak, just the technical lens you actually need.",
+      "startsAt": "2025-10-22T15:10:00",
+      "endsAt": "2025-10-22T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["54d20982-0ef2-4d4a-a274-ccd83aeb53bc"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62296,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    },
+    {
+      "id": "949295",
+      "title": "Kubernetes and the blackboard architectural pattern",
+      "description": "Kubernetes’ architecture has proved to be flexible, extensible - and widely popular. Its link to cybernetics is well known. But Kubernetes also shares a core architectural premise with speech recognition, air defence, and self-driving cars.\r\nThis talk is about the not-so-secret sauce behind the success of Kubernetes, and what that means for platform design.",
+      "startsAt": "2025-10-22T15:10:00",
+      "endsAt": "2025-10-22T15:40:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["01177c64-737b-4703-84ec-48cfc00d7b8a"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 62297,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
+    }
+  ],
+  "speakers": [
+    {
+      "id": "463ce4de-045d-4af7-8744-d58855743871",
+      "firstName": "Adrian",
+      "lastName": "Mouat",
+      "bio": "Adrian has been involved with containers from the early days of Docker and authored the O’Reilly book “Using Docker”. \r\n\r\nHe works at Chainguard  whose mission is to make the software lifecycle secure by default. His current focus is on improving the standard of security and provenance guarantees in container images.\r\n",
+      "tagLine": "Technical Community Advocate @ Chainguard",
+      "profilePicture": "https://sessionize.com/image/f4db-400o400o1-DHqubTjdoSNamskwFihyYg.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [952434],
+      "fullName": "Adrian Mouat",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "he/him"
+        }
+      ]
+    },
+    {
+      "id": "bacb8e89-4294-4d77-aed1-698f578aeeb1",
+      "firstName": "Andrew",
+      "lastName": "Garner",
+      "bio": "Platform Engineer at Baillie Gifford, ex-developer who found themselves working in the DevOps/Platform space where they found a love for all things Kubernetes and Open Source.",
+      "tagLine": "Platform Engineer, Baillie Gifford",
+      "profilePicture": "https://sessionize.com/image/664e-400o400o1-RWWXfbJ8ENRXWZkB2Vd2i3.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951596],
+      "fullName": "Andrew Garner",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "He/Him"
+        },
+        {
+          "questionId": 97824,
+          "answerValue": "Duncan"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Wright"
+        },
+        {
+          "questionId": 97829,
+          "answerValue": "He/Him"
+        }
+      ]
+    },
+    {
+      "id": "3b8be3c3-aa3c-4ef1-bb59-5b40385f09a7",
+      "firstName": "Anna",
+      "lastName": "Aitchison",
+      "bio": "Anna is currently a Senior Systems Engineer at ticketing provider TicketLine, where she's working on their AWS migration and mataining their legacy software. She has a strong background in AWS, Kubernetes, and all things Linux.\r\n \r\nShe loves to give back to the IT community by giving talks. She especially enjoys giving talks that question accepted viewpoints, promote diversity in tech and help people to get the best out of Kubernetes. Her previous speaking experience includes over fifteen talks at events including Norfolk Developers Conference, AWS Community Day Poland, DTX Manchester, and Open Source Summit Japan. \r\n \r\nOutside of work and speaking she's often found gardening or tinkering with retro computers.",
+      "tagLine": "Senior Systems Engineer, & Speaker",
+      "profilePicture": "https://sessionize.com/image/d5a3-400o400o1-GWWJuyUjQT4t4fNxoqNgXe.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [908485],
+      "fullName": "Anna Aitchison",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "02be6e34-1864-417f-b157-2cdb63e53d2a",
+      "firstName": "Antonia",
+      "lastName": "von den Driesch",
+      "bio": "Antonia has been a platform engineer at Giant Swarm for 5 years and is currently working on development of Giant Swarms Industrial IoT platform which brings their managed Kubernetes product to Smart Factory customers.",
+      "tagLine": "Giant Swarm, Platform Engineer",
+      "profilePicture": "https://sessionize.com/image/16e6-400o400o1-XfVXrSohPiTotWAJSZp7pM.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [885118],
+      "fullName": "Antonia von den Driesch",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "she/her"
+        }
+      ]
+    },
+    {
+      "id": "aec136af-88b2-4835-ba56-43bb16c69b72",
+      "firstName": "Cat",
+      "lastName": "Morris",
+      "bio": "Cat is the Product Manager at Syntasso delivering Kratix, an open-source cloud-native framework for building internal platforms. She has worked in tech for over 10 years, the last 6 have been in Platform Engineering across all kinds of domains. She specialises in bringing Product Mindset to technical teams that serve developers and other internal users - their user experience matters too! \r\n\r\nAway from her work endeavours, Cat is an avid plant enthusiast with dozens of houseplants. She also shares her home with Opal, her equally adored and occasionally demanding feline companion.",
+      "tagLine": "Staff Product Manager at Syntasso",
+      "profilePicture": "https://sessionize.com/image/36fa-400o400o1-GseAMBEuaWAxVodiBfBang.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [949535],
+      "fullName": "Cat Morris",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "she/her"
+        },
+        {
+          "questionId": 97824,
+          "answerValue": "Derik"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Evangelista"
+        },
+        {
+          "questionId": 97829,
+          "answerValue": "he/him"
+        }
+      ]
+    },
+    {
+      "id": "5017a2fc-3443-4b88-9932-45ea1f161256",
+      "firstName": "Christian",
+      "lastName": "Melendez",
+      "bio": "Christian helps customers to build fault-tolerant, elastic, reliable, and cost optimized workloads in AWS. He’s passionate about Kubernetes, programming, and building tech communities. Christian has spent 15 years working in different companies to build modern solutions using the cloud. ",
+      "tagLine": "Principal Specialist Solutions Architect at AWS",
+      "profilePicture": "https://sessionize.com/image/c629-400o400o1-WGZqqMMEcFmVkV2Qe4tfxb.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [928962],
+      "fullName": "Christian Melendez",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97824,
+          "answerValue": "Jan"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Wozniak"
+        }
+      ]
+    },
+    {
+      "id": "afac93e4-3f3a-4864-9207-82e9d391b31f",
+      "firstName": "Chunyi",
+      "lastName": "Lyu",
+      "bio": "Chunyi is a software engineer with five years dedicated to the Kubernetes ecosystem. She is passionate about cloud platform and building developer platforms. Outside of tech, you’ll find her enjoying theatre, exploring new destinations, or singing along at Kpop concerts.",
+      "tagLine": "Senior Software Engineer",
+      "profilePicture": "https://sessionize.com/image/3eff-400o400o1-3mXc1sHifEr7K9fgVRTszX.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [948891],
+      "fullName": "Chunyi Lyu",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "ab68efe8-5b90-40b6-bf36-e3b9a0c32256",
+      "firstName": "Dan",
+      "lastName": "Gomez Blanco",
+      "bio": "I'm a Principal Observability Architect at New Relic, supporting customers in their journey to drive adoption of best practices in observability and operational readiness across their engineering teams. Although maybe the term Platform Engineering was not so popular when I started my career, this is what I did for over 12 years before joining New Relic, in organisations such as CERN or Skyscanner, where I ultimately led the re-architecture of its observability platform with a focus on tool consolidation, adoption of open standards like OpenTelemetry, and building a culture of operational excellence. You may also recognise me from contributions to OpenTelemetry, where I've been part of the Governance Committee since 2023. In my free time I tend to start way too many hobbies, but drumming and photography are the ones that consistently keep me going.",
+      "tagLine": "Principal Observability Architect at New Relic, OpenTelemetry Governance",
+      "profilePicture": "https://sessionize.com/image/c54e-400o400o1-7QyDkUiCqaR4Lq1vg8at5.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951947],
+      "fullName": "Dan Gomez Blanco",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "he/him"
+        },
+        {
+          "questionId": 97824,
+          "answerValue": "Robert"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Pajak"
+        }
+      ]
+    },
+    {
+      "id": "40368e26-0b2b-4c08-a9ab-b4852adfb2ad",
+      "firstName": "Derik",
+      "lastName": "Evangelista ",
+      "bio": "Derik is a Principal Engineer currently working at Syntasso to enable platform teams to build the secure, scalable and usable platforms. In the past few years, Derik spent copious amounts of time fine tuning pipelines, services APIs, and managing engineering teams. Outside of work, you can probably find Derik running somewhere around London.",
+      "tagLine": "Principal Software Engineer at Syntasso",
+      "profilePicture": "https://sessionize.com/image/b4b3-400o400o1-G2bnPY8hKqnboRTyt8rEPi.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [949535],
+      "fullName": "Derik Evangelista",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "e3a7c06a-faef-453e-8fb3-de6bc993f3b3",
+      "firstName": "Dom",
+      "lastName": "Goodwin",
+      "bio": "Working within the infrastructure platform squad at Monzo Bank. focusing on our networking, service-mesh, observability and Kubernetes platform.",
+      "tagLine": "Staff Engineer @ Monzo",
+      "profilePicture": "https://sessionize.com/image/2398-400o400o1-X4A4xDKkqUVXjvvQ6LSwYd.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [937077],
+      "fullName": "Dom Goodwin",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1b09e20f-a560-4af9-ab77-bf271a3b0a17",
+      "firstName": "Duncan",
+      "lastName": "Wright",
+      "bio": "Kubestronaut, Senior Platform Engineer working for Baillie Gifford in Edinburgh",
+      "tagLine": "Kubestronaut, Senior Platform Engineer, Baillie Gifford",
+      "profilePicture": null,
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951596],
+      "fullName": "Duncan Wright",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "c4d8d2a5-e5c6-43f6-b2a4-e9724ee27b4f",
+      "firstName": "Elliot",
+      "lastName": "Gunton",
+      "bio": "Elliot is a passionate maintainer of Hera, the Python SDK for Argo Workflows. At Pipekit, he is helping to bring scalable data pipelines to the Python world, unlocking the full potential of Argo Workflows for data scientists. Previously, at Bloomberg, Elliot supported Machine Learning engineers to accelerate their model retraining with Argo Workflows through Hera, simplifying the authoring of complex workflows.",
+      "tagLine": "Senior Software Engineer at Pipekit.io",
+      "profilePicture": "https://sessionize.com/image/3b8a-400o400o1-naPrkFWrRSer5Vmn9SRucN.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [948250],
+      "fullName": "Elliot Gunton",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "12fbb300-3cdf-41b2-9372-cff28721b607",
+      "firstName": "Guy",
+      "lastName": "Templeton",
+      "bio": "Guy is a principal software engineer at Skyscanner, working in the Production Platform tribe where he’s focused on providing the best possible platform for Skyscanner’s travelers and engineers. Within Skyscanner, he’s the SME on scaling Kubernetes and containerised workloads. He’s also a co-chair of Kubernetes’ SIG Autoscaling. \r\n\r\nWhen he's not knees-deep in YAML he can usually be found having type 2 fun.\r\n",
+      "tagLine": "Principal Software Engineer - Skyscanner",
+      "profilePicture": "https://sessionize.com/image/f7ad-400o400o1-NcdHQAi3jtR36SfbAXPgXZ.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951568],
+      "fullName": "Guy Templeton",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "He/Him"
+        }
+      ]
+    },
+    {
+      "id": "c3234b94-4e7d-46fe-85de-8de4881c0952",
+      "firstName": "Hannah",
+      "lastName": "Foxwell",
+      "bio": "With over a decade of experience in platform engineering, Hannah Foxwell has always advocated for the human aspects of technology transformation and evolution. Hannah is relentlessly curious about the tools, technologies, processes and practices that make life better for the people involved in software development, using this knowledge to build happy, high-performing engineering teams. Hannah now works as an independent adviser, writer and creator at the intersection of platform engineering, security and AI.",
+      "tagLine": "Independent Consultant at the Intersection of Platform Engineering, Security, and AI, Founder of AI For the Rest of Us",
+      "profilePicture": "https://sessionize.com/image/60c8-400o400o1-3CmcyTEcaRG6ZSo94eVh95.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999445],
+      "fullName": "Hannah Foxwell",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "b6430939-6d93-49ff-a9e0-32519277a240",
+      "firstName": "Jake",
+      "lastName": "Klein ",
+      "bio": "Jake has over five years of experience working in the Kubernetes and the platform space. He started his career working on CloudFoundry, a popular CNCF Platform as a Service project. He then went on to work at Weaveworks where he worked on the open source project EKSctl, which is a CLI for provisioning Kubernetes clusters on AWS. Jake is now at Syntasso, which is a startup focussed on helping organisations develop their Platform as a Product. ",
+      "tagLine": "Staff Software Engineer",
+      "profilePicture": "https://sessionize.com/image/15f9-400o400o1-9as5fmuPDXpXnC4jqEzYhm.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [948891],
+      "fullName": "Jake Klein",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "a7e4d533-0d9a-47d9-a5ac-cdf648d56fe7",
+      "firstName": "James",
+      "lastName": "Le Cuirot",
+      "bio": "James \"Chewi\" Le Cuirot has been a passionate open-source contributor for over two decades, primarily as a maintainer for both Gentoo Linux in his spare time and its derivative Flatcar Container Linux while working at Microsoft. He lives and works right here in Edinburgh.",
+      "tagLine": "Open-source maintainer at Microsoft and beyond",
+      "profilePicture": "https://sessionize.com/image/bfcc-400o400o1-skmro11ZXySepLN7zfk4mp.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [943458],
+      "fullName": "James Le Cuirot",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "6b212f44-0bbe-4e5d-a2e9-e555a3c84d42",
+      "firstName": "Joe",
+      "lastName": "Salisbury",
+      "bio": "Joe Salisbury is VP Engineering at Giant Swarm. He’s tasked with making Giant Swarm an attractive work environment for engineers and generally a dope place to work. When he’s not ensuring engineering operational excellence, he can be found rowing and playing D&D, but just not at the same time… yet.",
+      "tagLine": "VP Engineering, Giant Swarm",
+      "profilePicture": "https://sessionize.com/image/8e0e-400o400o1-HsWSX2rr4uMnp1WV1R9you.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [882524],
+      "fullName": "Joe Salisbury",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "db7e46af-b53d-4f18-b596-1a046346439a",
+      "firstName": "John",
+      "lastName": "Clark",
+      "bio": "John is a senior software engineer at Skyscanner, where he's the SME on our Istio setup. He's been driving improvements internally and upstream in the open source project to enable significant improvements in efficiency whilst maintaining resiliency.",
+      "tagLine": "Senior Software Engineer - Skyscanner",
+      "profilePicture": "https://sessionize.com/image/1607-400o400o1-EqVLaLYWhvU9xWPPadx5mB.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951568],
+      "fullName": "John Clark",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "3a870927-756c-4acc-ad23-b277de123f65",
+      "firstName": "Lian",
+      "lastName": "Li",
+      "bio": "Lian always wanted to save the world.\r\nAfter dropping out of law school, she decided to work with computers instead. While in Web Dev, she started attending and speaking at tech events, and soon fell in love with the tech community.\r\nIn her roles as Developer, Consultant and Developer Advocate, Lian combined technical knowledge with an understanding of the human condition.\r\n\r\nCurrently, Lian lives in Amsterdam, where she works as an independent Cloud Consultant and serves as Co-Chair for the CNCF TAG app-delivery. She can also be seen on stage at various English-speaking musical theatre productions, doing standup comedy and improv theatre.",
+      "tagLine": "Cloud Native Human",
+      "profilePicture": "https://sessionize.com/image/e046-400o400o1-YQSUHjAT4pqHtSbeMc5nei.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999438],
+      "fullName": "Lian Li",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1559cccc-ed7c-4296-973d-3b05f3c3d25e",
+      "firstName": "Lian",
+      "lastName": "Li",
+      "bio": "Lian always wanted to save the world.\r\nAfter dropping out of law school, she decided to work with computers instead. While in Web Dev, she started attending and speaking at tech events, and soon fell in love with the tech community.\r\nIn her roles as Developer, Consultant and Developer Advocate, Lian combined technical knowledge with an understanding of the human condition.\r\n\r\nCurrently, Lian lives in Amsterdam, where she works as an independent Cloud Consultant and serves as Co-Chair for the CNCF TAG app-delivery. She can also be seen on stage at various English-speaking musical theatre productions, doing standup comedy and improv theatre.",
+      "tagLine": "Cloud Native Human",
+      "profilePicture": "https://sessionize.com/image/2c07-400o400o1-TCMG7zbfMRDi8MhRxVroR4.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1044330],
+      "fullName": "Lian Li",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "she/her"
+        }
+      ]
+    },
+    {
+      "id": "ad289415-0cb2-41f9-8d07-de172740844f",
+      "firstName": "Liz",
+      "lastName": "Rice",
+      "bio": "Liz Rice is Chief Open Source Officer at eBPF specialists Isovalent, creators of the Cilium project, and now part of Cisco. She is an award-winning speaker, and the author of O'Reilly books on \"Container Security\" and \"Learning eBPF\". She has held many roles with the CNCF, including as a governing board member, chair of the Technical Oversight Committee, and Co-Chair of KubeCon + CloudNativeCon, and was also previously on the board of OpenUK.",
+      "tagLine": "Chief Open Source Officer, Isovalent at Cisco",
+      "profilePicture": "https://sessionize.com/image/c8e2-400o400o1-RSSYwv3v9DdcqCZLnneVuG.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999443],
+      "fullName": "Liz Rice",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "c9588f7b-33d1-4c3c-8166-f55314ea756c",
+      "firstName": "Marcus",
+      "lastName": "Tenorio",
+      "bio": "Mart is an Infrastructure Security Manager , where he enjoys managing various engineers who teach him every day how to break things and become a better manager and engineer.\r\n\r\nMart began his journey in cybersecurity trying to understand why so many people liked prime numbers. From there, understanding how these numbers ended up in the clouds and even inside processors became a fascination.\r\n\r\nHe enjoys playing with obscure technologies and trying to be a chef in his spare time.",
+      "tagLine": "Infrastructure Security Manager",
+      "profilePicture": "https://sessionize.com/image/66b6-400o400o1-7uXiUwubZKKrhxEtgQDhVy.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [949133],
+      "fullName": "Marcus Tenorio",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "68b62784-1bf3-47ba-a6c5-dc9bbfd77ef8",
+      "firstName": "Marina",
+      "lastName": "Moore",
+      "bio": "Marina Moore is a Research Scientist at Edera. She is a maintainer of The Update Framework (TUF), a CNCF graduated project that provides secure software update and delivery. She is also a chair of CNCF's TAG Security where she contributes to security assessments and whitepapers, as well as providing technical security leadership to CNCF projects.\r\n\r\nHer research interests include container isolation, software supply chain security, and cloud security.",
+      "tagLine": "Research Scientist - Head of Edera Research",
+      "profilePicture": "https://sessionize.com/image/b558-400o400o1-YPzS7KCqfUr8NfwSwL6zRc.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [949962],
+      "fullName": "Marina Moore",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "a1fcd812-ecfa-4155-8184-b2cc9dac4574",
+      "firstName": "Marko",
+      "lastName": "Bevc",
+      "bio": "Marko is a Principal Consultant at The Scale Factory, based in the UK. He has worked in the IT industry for more than two decades and engaged with many different technologies. He currently leads innovation, strategic projects and help customers to build and scale their SaaS platforms in AWS Cloud. Marko is also responsible steering our technical direction based on the current industry trends. Being passionate about community diversity, equality, automation, Cloud Native and Open Source, you can also find Marko speaking and participating at DevOps, Cloud Native/Kubernetes and HashiCorp events. He’s an open source contributor, problem solver, HashiCorp Ambassador, OpenUK Ambassador,  AWS Community Builder and enthusiastic about emerging technologies. In his free time Marko enjoys hiking and travelling.",
+      "tagLine": "Principal Consultant",
+      "profilePicture": "https://sessionize.com/image/6244-400o400o1-LUL2F7DLTGYYg8dBwxnxFL.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [915467],
+      "fullName": "Marko Bevc",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "he / him"
+        }
+      ]
+    },
+    {
+      "id": "6421dbe4-7c31-486e-9068-e8e7c363159c",
+      "firstName": "Matt",
+      "lastName": "Turner",
+      "bio": "Matt is a software/platform engineer, recently working on service mesh. He's been doing Dev, sometimes with added Ops, for 20 years, so he knows exactly how not to do it. He's given many talks and workshops on Kubernetes and Istio, and is co-organiser of the Service Mesh London meetup. He tweets @mt165 and blogs at https://mt165.co.uk.",
+      "tagLine": "Production Engineer @Meta",
+      "profilePicture": "https://sessionize.com/image/40e3-400o400o1-acQN9tZathShR4pSDTFZ5L.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999442],
+      "fullName": "Matt Turner",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "a629458c-a0db-4d84-b21c-162ba1c9aece",
+      "firstName": "Mauro",
+      "lastName": "Morales",
+      "bio": "Hi, I’m Mauro Morales! Born and raised in Guatemala, my tech journey has taken me across the globe—from the scenic Alps of Switzerland to the bustling streets of Berlin, and now to the charming cobblestone lanes of Ghent, Belgium. Since the mid-2000s, I’ve been coding, creating, and sharing my passion for technology.\r\n\r\nI work as an Open-Source Developer Specialist at Spectro Cloud, where I help shape Kairos, a groundbreaking operating system for edge computing. You’ll often find me at events like FOSDEM, KubeCon, and Open-Source Summit, geeking out about all things tech and connecting with fellow enthusiasts. I also serve as co-chair of the CNCF Special-Purpose Operating Systems Working Group, collaborating with brilliant minds to reimagine what’s possible in the OS space.\r\n\r\nWhen I’m not coding or presenting, you’ll most likely find me lacing up my running shoes and hitting the streets of Ghent.",
+      "tagLine": "Open-Source Staff Engineer at Spectro Cloud",
+      "profilePicture": "https://sessionize.com/image/c761-400o400o1-BA8KSmsjgTu97q9TnZYrbV.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [938552],
+      "fullName": "Mauro Morales",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "he/him"
+        }
+      ]
+    },
+    {
+      "id": "5d564e84-3e22-4afd-bb08-03a4a43ce367",
+      "firstName": "Miles",
+      "lastName": "Bryant",
+      "bio": "Miles has been building and scaling Monzo's platform since 2018, working with cloud native technologies like Kubernetes, Prometheus, and Envoy. He is also an organiser of the Kubernetes London meetup.",
+      "tagLine": "Senior Platform Engineer",
+      "profilePicture": "https://sessionize.com/image/67e8-400o400o1-nxEksSQjorFkMLs5EAbbF2.jpeg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [937077],
+      "fullName": "Miles Bryant",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "58c69f85-4e12-4e6e-b36e-1e3fdf302b15",
+      "firstName": "Nico",
+      "lastName": "Vibert",
+      "bio": "Nico Vibert is a Senior Staff Technical Marketing Engineer at Isovalent – the company behind the open-source cloud native solution Cilium. \r\nNico has worked in many different roles – operations and support, design and architecture, technical pre-sales – at companies such as HashiCorp, VMware and Cisco. \r\n\r\nNico loves creating content and writing books. \r\n\r\nNico regularly speaks at large events, such as VMworld and Cisco Live.",
+      "tagLine": "Senior Staff Technical Marketing Engineer",
+      "profilePicture": "https://sessionize.com/image/2531-400o400o1-43a45dff-5286-4891-88a4-96084f91f1b6.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1044322],
+      "fullName": "Nico Vibert",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97824,
+          "answerValue": "James"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Laverack"
+        }
+      ]
+    },
+    {
+      "id": "21ec4da4-b95c-4e5b-a052-f3439917624b",
+      "firstName": "Nigel",
+      "lastName": "Douglas",
+      "bio": "Nigel Douglas is the Head of Developer Relations at Cloudsmith. He champions Cloudsmith’s developer ecosystem by creating compelling educational content, engaging with developer communities, and promoting Cloudsmith as the go-to solution for artifact management and supply chain security. Working closely with product, engineering, and marketing teams, Nigel helps build and shape the DevOps community through events, tutorials, and innovative programs.",
+      "tagLine": "Head of Developer Relations, Cloudsmith",
+      "profilePicture": "https://sessionize.com/image/8e16-400o400o1-ULikrhnrm9LMo5upSoxRN3.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1044328],
+      "fullName": "Nigel Douglas",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "He/Him"
+        }
+      ]
+    },
+    {
+      "id": "2a0459a8-4c6c-4aea-b72d-8047f40506ea",
+      "firstName": "Patrick",
+      "lastName": "Stephens",
+      "bio": "Over 20 years experience in software engineering, mostly in the defence domain at Thales. The last few years of this were focused on transformation first to containers then Kubernetes. After Thales I worked on the cloud native team at Couchbase, working on their Golang-based Kubernetes operator. This included producing a custom Fluent Bit deployment for observability needs. Calyptia (founded by the Fluent maintainers) then approached me to come work with them building out observability products.",
+      "tagLine": "Software Engineer, Devops, Infra",
+      "profilePicture": "https://sessionize.com/image/9a2b-400o400o1-M4rASRpDqW7TZpq5h6eTxJ.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [917096],
+      "fullName": "Patrick Stephens",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "c66a7fd8-1fa2-42f9-b324-5f511244182b",
+      "firstName": "Paula",
+      "lastName": "Kennedy",
+      "bio": "Paula is Co-Founder & COO of Syntasso; previously Senior Director at VMware Tanzu, Pivotal and Co-Founder & COO of CloudCredo.\r\nWith 25 years experience in tech, Paula is a CNCF Ambassador, Team Topologies Advocate and has spoken at many conferences including QCon, KubeCon, and DevOpsDays. Paula is an organiser for KCD UK, Fast Flow Conf and DevOpsDays London, and also organises the London Platform User Group. Based in the UK, Paula enjoys walking her dog and attempting to run half-marathons.",
+      "tagLine": "COO, Syntasso",
+      "profilePicture": "https://sessionize.com/image/fd7a-400o400o1-nZxNZgPk7kP4uSygDBF9Ep.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1044320],
+      "fullName": "Paula Kennedy",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "54d20982-0ef2-4d4a-a274-ccd83aeb53bc",
+      "firstName": "Paulina",
+      "lastName": "Dubas",
+      "bio": "I’m Paulina, a freelance DevOps consultant based in Copenhagen. I work with companies across Europe to design scalable infrastructure, improve developer platforms, and bring in just enough automation to make things run smoother. Lately, that’s included helping teams understand and adopt AI tools—from LLMs to intelligent agents—in a way that’s safe, useful, and not overengineered. I also run workshops on GenAI, DevSecOps, and GreenOps, and speak regularly at meetups and conferences.",
+      "tagLine": "Dubas Consulting, Consultant ",
+      "profilePicture": "https://sessionize.com/image/a7da-400o400o1-KY9s3BK6qDcTsg2DSPPEna.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [950375],
+      "fullName": "Paulina Dubas",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "she/her"
+        },
+        {
+          "questionId": 97824,
+          "answerValue": "NA"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "NA"
+        },
+        {
+          "questionId": 97829,
+          "answerValue": "NA"
+        }
+      ]
+    },
+    {
+      "id": "45624781-05c7-4e3f-bb76-2ff093b63d55",
+      "firstName": "Piotr",
+      "lastName": "Zaniewski",
+      "bio": "An active contributor to open source, content creator on Medium and YouTube, focusing on practical, scalable solutions in cloud-native environments. DevOps and Platform Engineering practitioner and advocate. ",
+      "tagLine": "🌐 Cloud Platforms Architect | 📢 Speaker ✍️ Blogger | 🚀 Digital Transformation",
+      "profilePicture": "https://sessionize.com/image/cecc-400o400o1-SNmacU8sf9scpJdVK5Po31.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1044318],
+      "fullName": "Piotr Zaniewski",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "d087e6f6-0e80-4ce1-950a-b7db905043b2",
+      "firstName": "Robert",
+      "lastName": "Pająk",
+      "bio": "Robert Pająk, also known as Pellared, has a lot of experience connected with software design, concurrent programming, relational databases, cyber security, performance tuning, testing, automation, observability, and open-source.\r\nRobert is currently an OpenTelemetry Go maintainer and an OpenTelemetry Specification sponsor. \r\nHe is the author of goyek, a task automation Go library.\r\nRobert is also a co-organizer of the GoCracow meetup.",
+      "tagLine": "OpenTelemetry Go maintainer, Principal Software Engineer @ Splunk",
+      "profilePicture": "https://sessionize.com/image/d823-400o400o1-VqATM3iWfNtRXExsC5UL6k.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951947],
+      "fullName": "Robert Pająk",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "47bcaf1f-c612-41e4-82b0-0d90fff99785",
+      "firstName": "Rory",
+      "lastName": "McCune",
+      "bio": "Rory is a senior security researcher and advocate for Datadog who has extensive experience with security and Cloud native computing. In addition to his work as a security researcher on containerization technologies like Kubernetes and Docker, he has presented at Kubecon EU and NA amongst other conferences. He contributed to the CIS benchmarks for Docker and Kubernetes and is a member of Kubernetes SIG-Security. When he's not working, Rory can generally be found out enjoying the scenery of the Scottish highlands.",
+      "tagLine": "Senior Security Researcher & Advocate at Datadog",
+      "profilePicture": "https://sessionize.com/image/35a9-400o400o1-JkdERWzS9xoSBATKM39VGh.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999441],
+      "fullName": "Rory McCune",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "91861600-b22f-4056-964e-d6d96ce14b1d",
+      "firstName": "Saeid",
+      "lastName": "Bostandoust",
+      "bio": "I began using Kubernetes in productions in 2016 and have been working with it since the early days of its release. Since 2018, I've dedicated my time to Kubernetes architecture, design, development, engineering and operation at scale. I also taught over 10 thousand people about Kubernetes and CNCF technologies. I'm currently working as a Kubernetes Architect Director in a massive Kubernetes Platform with over 500 clusters in CBRE and as a Founder/Instructor/Writer in Kubedemy.io to help individuals and businesses to be successful in their Kubernetes adoption journey.",
+      "tagLine": "Founder @ Kubedemy.io | Kubernetes Expert | Help people and companies understand and solve Kubernetes difficulties at scale in enterprises",
+      "profilePicture": "https://sessionize.com/image/51c5-400o400o1-49KrRgCU96F7UWi9ZbWaBr.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [948333],
+      "fullName": "Saeid Bostandoust",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "c685186b-a31e-4d1d-aa44-98d08978ef74",
+      "firstName": "Stefan",
+      "lastName": "Prodan",
+      "bio": "Stefan is a Principal Engineer at ControlPlane and an open source contributor to cloud-native projects. He is the creator of Flagger the progressive delivery operator for Kubernetes, and a core maintainer of the CNCF's Flux project. Stefan has over 20 years of experience with software development and he enjoys programming in Go and writing about distributed systems.",
+      "tagLine": "Core Maintainer of CNCF Flux CD",
+      "profilePicture": "https://sessionize.com/image/0caa-400o400o1-D3h1K4hgUx2H3VDznH86K1.jpeg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [951767],
+      "fullName": "Stefan Prodan",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "01177c64-737b-4703-84ec-48cfc00d7b8a",
+      "firstName": "Tim",
+      "lastName": "Bannister",
+      "bio": "Tim helps people help people to learn and use Kubernetes.\r\n\r\nAs well as working as a senior consultant at ControlPlane, Tim is a reviewer for Kubernetes’ documentation and co-edits the official Kubernetes blog. Before joining ControlPlane, Tim worked at The Scale Factory, a SaaS-focused consultancy. He’s also contributed subject matter expertise for cloud and security qualifications including the CNCF Cloud Native Platform Associate and AWS Solution Architect Pro.",
+      "tagLine": "Senior consultant at ControlPlane",
+      "profilePicture": "https://sessionize.com/image/9777-400o400o1-nzBfnKyaVzxyh7pG7qEARV.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [949295],
+      "fullName": "Tim Bannister",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "he / him / they / them"
+        }
+      ]
+    },
+    {
+      "id": "a9d52d6b-d0c6-4a83-b8cb-22e3f0a2c6df",
+      "firstName": "Whitney",
+      "lastName": "Lee",
+      "bio": "Whitney is a kind and curious human who loves exploring and explaining tools in the cloud native landscape. She has delivered two KubeCon keynotes and countless fun, funny, and informative community talks. She runs a vibrant YouTube channel, co-hosts You Choose!—a ‘Choose-Your-Own-Adventure’-style journey through the CNCF landscape—and is also a host of Cloud Native Live and the podcast Software Defined Interviews.",
+      "tagLine": "Senior Technical Advocate at Datadog",
+      "profilePicture": "https://sessionize.com/image/b4e6-400o400o1-TG68EfcbgrUfTHNJbN2u8h.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [999446],
+      "fullName": "Whitney Lee",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "0a1cdc66-fd11-42cf-a1f2-91466b04efc9",
+      "firstName": "William",
+      "lastName": "Rizzo",
+      "bio": "William is a CNCF Ambassador and Linkerd Ambassador currently working at Mirantis as Strategy Lead. He’s focused on helping customers designing, building, and running their initiatives on Edge, AI and Platform Engineering. He wore many hats in the IT world, Engineering, Pre-Post sales, Product Owner and Consulting. from HPC, Storage to Distributed Systems.\r\nWilliam enjoys volunteering in several Cloud Native groups and organizing the KCD Netherlands events. ",
+      "tagLine": "Consulting Architect at Mirantis",
+      "profilePicture": "https://sessionize.com/image/f27c-400o400o1-pXhWg8xa7sdwL4hxCmPqJ6.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [938552],
+      "fullName": "William Rizzo",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97824,
+          "answerValue": "Mauro"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Morales"
+        }
+      ]
+    },
+    {
+      "id": "17483812-e926-4a70-b592-729e384e0ab2",
+      "firstName": "Xavier",
+      "lastName": "Avrillier",
+      "bio": "Xavier is a Solutions Architect at Giant Swarm, he is currently working on the managed Kubernetes product in hybrid environments and smart factories. His main focus is around cluster lifecycle and customer implementations.",
+      "tagLine": "Solutions Architect at Giant Swarm",
+      "profilePicture": "https://sessionize.com/image/a408-400o400o1-NsfANkkf9XGFFEdVSMHpAz.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [885118],
+      "fullName": "Xavier Avrillier",
+      "categoryItems": [],
+      "questionAnswers": [
+        {
+          "questionId": 97819,
+          "answerValue": "He/Him"
+        },
+        {
+          "questionId": 97824,
+          "answerValue": "Antonia"
+        },
+        {
+          "questionId": 97825,
+          "answerValue": "Von Den Driesch"
+        },
+        {
+          "questionId": 97829,
+          "answerValue": "She/Her"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 97819,
+      "question": "Pronouns",
+      "questionType": "Short_Text",
+      "sort": 17
+    },
+    {
+      "id": 97824,
+      "question": "Additional Speaker Given (or English) Name",
+      "questionType": "Short_Text",
+      "sort": 23
+    },
+    {
+      "id": 97825,
+      "question": "Additional Speaker Surname",
+      "questionType": "Short_Text",
+      "sort": 24
+    },
+    {
+      "id": 97829,
+      "question": "Additional Speaker Pronouns",
+      "questionType": "Short_Text",
+      "sort": 25
+    }
+  ],
+  "categories": [],
+  "rooms": [
+    {
+      "id": 62296,
+      "name": "Pentland East",
+      "sort": 0
+    },
+    {
+      "id": 62297,
+      "name": "Pentland West",
+      "sort": 1
+    },
+    {
+      "id": 62298,
+      "name": "Prestonfield (Workshops)",
+      "sort": 2
+    }
+  ]
+}

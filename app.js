@@ -142,30 +142,20 @@ function displaySchedule() {
         dayHeader.textContent = formatDate(day);
         daySection.appendChild(dayHeader);
 
-        // Group sessions by time for this day
-        const sessionsByTime = groupSessionsByTime(sessionsByDay[day]);
+        const sessionsGrid = document.createElement('div');
+        sessionsGrid.className = 'sessions-grid';
 
-        Object.keys(sessionsByTime).sort().forEach(time => {
-            const timeSlot = document.createElement('div');
-            timeSlot.className = 'time-slot';
+        // Sort sessions by start time
+        const sortedSessions = sessionsByDay[day].sort((a, b) =>
+            a.startsAt.localeCompare(b.startsAt)
+        );
 
-            const timeHeader = document.createElement('div');
-            timeHeader.className = 'time-header';
-            timeHeader.textContent = time;
-            timeSlot.appendChild(timeHeader);
-
-            const sessionsGrid = document.createElement('div');
-            sessionsGrid.className = 'sessions-grid';
-
-            sessionsByTime[time].forEach(session => {
-                const sessionCard = createSessionCard(session);
-                sessionsGrid.appendChild(sessionCard);
-            });
-
-            timeSlot.appendChild(sessionsGrid);
-            daySection.appendChild(timeSlot);
+        sortedSessions.forEach(session => {
+            const sessionCard = createSessionCard(session);
+            sessionsGrid.appendChild(sessionCard);
         });
 
+        daySection.appendChild(sessionsGrid);
         scheduleDiv.appendChild(daySection);
     });
 }

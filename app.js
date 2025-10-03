@@ -273,7 +273,7 @@ function showError(message) {
 
 // Dark mode functionality
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
 }
 

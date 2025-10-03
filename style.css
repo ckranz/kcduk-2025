@@ -52,7 +52,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 /* Header */
@@ -90,7 +90,7 @@ header::before {
 }
 
 .header-logo {
-  max-height: 60px;
+  max-height: 100px;
   height: auto;
   max-width: 100%;
   object-fit: contain;
@@ -157,7 +157,8 @@ main {
 
 /* Filters */
 #filter-container {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
 }
 
 .filter-toggle {
@@ -202,7 +203,7 @@ main {
 
 #filters {
   background: var(--card-bg);
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   margin-top: 0.5rem;
   box-shadow: var(--shadow);
@@ -319,8 +320,15 @@ main {
   border-bottom: 3px solid var(--primary-color);
 }
 
+.day-section > .session-card {
+  margin-bottom: 1.5rem;
+}
+
 .time-slot {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px dashed var(--border-color);
 }
 
 .time-header {
@@ -334,7 +342,7 @@ main {
 .sessions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 /* Session Cards */
@@ -371,6 +379,48 @@ main {
     var(--workshop-gradient-start),
     var(--card-bg)
   );
+}
+
+/* West room styling - border on right */
+.session-card.room-west {
+  border-left: none;
+  border-right: 4px solid var(--primary-color);
+}
+
+.session-card.room-west.plenum {
+  border-right-color: var(--plenum-color);
+  background: linear-gradient(
+    to left,
+    var(--plenum-gradient-start),
+    var(--card-bg)
+  );
+}
+
+.session-card.room-west.workshop {
+  border-right-color: var(--workshop-color);
+  background: linear-gradient(
+    to left,
+    var(--workshop-gradient-start),
+    var(--card-bg)
+  );
+}
+
+/* West room layout - right-aligned */
+.session-card.room-west .session-title {
+  text-align: right;
+}
+
+.session-card.room-west .session-meta {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.session-card.room-west .session-speakers-compact {
+  flex-direction: row-reverse;
+}
+
+.session-card.room-west .speaker-compact {
+  flex-direction: row-reverse;
 }
 
 .session-header {
@@ -482,6 +532,11 @@ main {
 
 .session-card.expanded .expand-indicator {
   transform: rotate(180deg);
+}
+
+.session-card.room-west .expand-indicator {
+  right: auto;
+  left: 0.75rem;
 }
 
 /* Footer */

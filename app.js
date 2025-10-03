@@ -142,20 +142,46 @@ function displaySchedule() {
         dayHeader.textContent = formatDate(day);
         daySection.appendChild(dayHeader);
 
-        const sessionsGrid = document.createElement('div');
-        sessionsGrid.className = 'sessions-grid';
+        // Group sessions by time slot for this day
+        const sessionsByTime = groupSessionsByTime(sessionsByDay[day]);
 
-        // Sort sessions by start time
-        const sortedSessions = sessionsByDay[day].sort((a, b) =>
-            a.startsAt.localeCompare(b.startsAt)
-        );
+        Object.keys(sessionsByTime).sort().forEach(time => {
+            const sessions = sessionsByTime[time];
 
-        sortedSessions.forEach(session => {
-            const sessionCard = createSessionCard(session);
-            sessionsGrid.appendChild(sessionCard);
+            // Separate talks from keynotes/workshops
+            const talks = sessions.filter(s => getSessionType(s) === 'talk');
+            const nonTalks = sessions.filter(s => getSessionType(s) !== 'talk');
+
+            // Group talks if there are multiple
+            if (talks.length > 1) {
+                const timeSlot = document.createElement('div');
+                timeSlot.className = 'time-slot';
+
+                const sessionsGrid = document.createElement('div');
+                sessionsGrid.className = 'sessions-grid';
+
+                talks.forEach(session => {
+                    const sessionCard = createSessionCard(session);
+                    sessionsGrid.appendChild(sessionCard);
+                });
+
+                timeSlot.appendChild(sessionsGrid);
+                daySection.appendChild(timeSlot);
+            } else {
+                // Single talk or no talks - add individually
+                talks.forEach(session => {
+                    const sessionCard = createSessionCard(session);
+                    daySection.appendChild(sessionCard);
+                });
+            }
+
+            // Add non-talks (keynotes/workshops) individually
+            nonTalks.forEach(session => {
+                const sessionCard = createSessionCard(session);
+                daySection.appendChild(sessionCard);
+            });
         });
 
-        daySection.appendChild(sessionsGrid);
         scheduleDiv.appendChild(daySection);
     });
 }
@@ -173,6 +199,14 @@ function createSessionCard(session) {
     }
 
     const room = allData.rooms.find(r => r.id === session.roomId);
+
+    // Add East/West class based on room name
+    if (room && room.name.toLowerCase().includes('west')) {
+        card.classList.add('room-west');
+    } else if (room && room.name.toLowerCase().includes('east')) {
+        card.classList.add('room-east');
+    }
+
     const speakers = session.speakers.map(speakerId =>
         allData.speakers.find(s => s.id === speakerId)
     ).filter(s => s);

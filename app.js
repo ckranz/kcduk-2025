@@ -133,22 +133,42 @@ function createSessionCard(session) {
             <h3 class="session-title">${session.title}</h3>
             ${room ? `<span class="session-room">${room.name}</span>` : ''}
         </div>
-        <div class="session-time">${timeRange}</div>
-        ${session.description ? `<p class="session-description">${session.description}</p>` : ''}
-        ${speakers.length > 0 ? `
-            <div class="session-speakers">
-                ${speakers.map(speaker => `
-                    <div class="speaker">
-                        ${speaker.profilePicture ? `<img src="${speaker.profilePicture}" alt="${speaker.fullName}">` : ''}
-                        <div class="speaker-info">
+        <div class="session-summary">
+            <div class="session-time">${timeRange}</div>
+            ${speakers.length > 0 ? `
+                <div class="session-speakers-compact">
+                    ${speakers.map(speaker => `
+                        <div class="speaker-compact">
+                            ${speaker.profilePicture ? `<img src="${speaker.profilePicture}" alt="${speaker.fullName}">` : ''}
                             <div class="speaker-name">${speaker.fullName}</div>
-                            ${speaker.tagLine ? `<div class="speaker-tagline">${speaker.tagLine}</div>` : ''}
                         </div>
-                    </div>
-                `).join('')}
-            </div>
-        ` : ''}
+                    `).join('')}
+                </div>
+            ` : ''}
+        </div>
+        <div class="session-details">
+            ${session.description ? `<p class="session-description">${session.description}</p>` : ''}
+            ${speakers.length > 0 && speakers.some(s => s.tagLine) ? `
+                <div class="session-speakers-full">
+                    ${speakers.map(speaker => speaker.tagLine ? `
+                        <div class="speaker-tagline">
+                            <strong>${speaker.fullName}:</strong> ${speaker.tagLine}
+                        </div>
+                    ` : '').join('')}
+                </div>
+            ` : ''}
+        </div>
+        <div class="expand-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
     `;
+
+    // Add click handler to toggle expansion
+    card.addEventListener('click', () => {
+        card.classList.toggle('expanded');
+    });
 
     return card;
 }

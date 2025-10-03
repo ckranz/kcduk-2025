@@ -209,10 +209,13 @@ main {
 .session-card {
     background: var(--card-bg);
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
     box-shadow: var(--shadow);
     transition: transform 0.2s, box-shadow 0.2s;
     border-left: 4px solid var(--primary-color);
+    cursor: pointer;
+    position: relative;
 }
 
 .session-card:hover {
@@ -234,9 +237,10 @@ main {
 }
 
 .session-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     flex: 1;
+    margin: 0;
 }
 
 .session-room {
@@ -249,11 +253,57 @@ main {
     white-space: nowrap;
 }
 
+.session-summary {
+    margin-top: 0.5rem;
+}
+
 .session-time {
     color: var(--muted-text);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Compact speaker view (collapsed state) */
+.session-speakers-compact {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.speaker-compact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.speaker-compact img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+}
+
+.speaker-compact .speaker-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Expanded session details */
+.session-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.session-card.expanded .session-details {
+    max-height: 2000px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .session-description {
@@ -263,46 +313,34 @@ main {
     font-size: 0.95rem;
 }
 
-/* Speakers */
-.session-speakers {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
+.session-speakers-full {
+    margin-top: 0.75rem;
 }
 
-.speaker {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 0.75rem;
+.session-speakers-full .speaker-tagline {
+    font-size: 0.85rem;
+    color: var(--muted-text);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
 }
 
-.speaker:last-child {
+.session-speakers-full .speaker-tagline:last-child {
     margin-bottom: 0;
 }
 
-.speaker img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--border-color);
+/* Expand indicator */
+.expand-indicator {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.75rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
 }
 
-.speaker-info {
-    flex: 1;
+.session-card.expanded .expand-indicator {
+    transform: rotate(180deg);
 }
 
-.speaker-name {
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.speaker-tagline {
-    font-size: 0.85rem;
-    color: var(--muted-text);
-    margin-top: 0.2rem;
-}
 
 /* Footer */
 footer {

@@ -203,5 +203,28 @@ function showError(message) {
     errorDiv.style.display = 'block';
 }
 
+// Dark mode functionality
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
 // Initialize on page load
-document.addEventListener('DOMContentLoaded', fetchSchedule);
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    fetchSchedule();
+
+    // Add theme toggle event listener
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+});

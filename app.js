@@ -30,6 +30,44 @@ async function fetchSchedule() {
     }
 }
 
+// Set filters based on URL
+function setFiltersBasedOnURL() {
+    const hostname = window.location.hostname;
+    const searchParams = new URLSearchParams(window.location.search);
+    const keynoteCheckbox = document.getElementById('type-keynote');
+    const talkCheckbox = document.getElementById('type-talk');
+    const workshopCheckbox = document.getElementById('type-workshop');
+
+    // Check for query parameters first (they take precedence)
+    if (searchParams.has('keynotes')) {
+        // Show only Keynotes
+        keynoteCheckbox.checked = true;
+        talkCheckbox.checked = false;
+        workshopCheckbox.checked = false;
+    } else if (searchParams.has('talks')) {
+        // Show only Talks
+        keynoteCheckbox.checked = false;
+        talkCheckbox.checked = true;
+        workshopCheckbox.checked = false;
+    } else if (searchParams.has('workshops')) {
+        // Show only Workshops
+        keynoteCheckbox.checked = false;
+        talkCheckbox.checked = false;
+        workshopCheckbox.checked = true;
+    } else if (hostname === 'agenda.kcduk.io') {
+        // Show only Keynotes & Talks
+        keynoteCheckbox.checked = true;
+        talkCheckbox.checked = true;
+        workshopCheckbox.checked = false;
+    } else if (hostname === 'workshops.kcduk.io') {
+        // Show only Workshops
+        keynoteCheckbox.checked = false;
+        talkCheckbox.checked = false;
+        workshopCheckbox.checked = true;
+    }
+    // Otherwise, keep default (all checked)
+}
+
 // Initialize filter dropdowns
 function initializeFilters() {
     const roomFilter = document.getElementById('room-filter');
@@ -74,6 +112,10 @@ function initializeFilters() {
     });
 
     document.getElementById('filter-container').style.display = 'block';
+
+    // Set filters based on URL and apply them
+    setFiltersBasedOnURL();
+    filterSchedule();
 }
 
 // Filter schedule based on selected filters

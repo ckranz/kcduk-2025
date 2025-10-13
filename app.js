@@ -30,15 +30,14 @@ async function fetchSchedule() {
     }
 }
 
-// Set filters based on URL
+// Set filters based on URL query parameters or referrer
 function setFiltersBasedOnURL() {
-    const hostname = window.location.hostname;
     const searchParams = new URLSearchParams(window.location.search);
     const keynoteCheckbox = document.getElementById('type-keynote');
     const talkCheckbox = document.getElementById('type-talk');
     const workshopCheckbox = document.getElementById('type-workshop');
 
-    // Check for query parameters first (they take precedence)
+    // Check for query parameters first
     if (searchParams.has('keynotes')) {
         // Show only Keynotes
         keynoteCheckbox.checked = true;
@@ -54,16 +53,21 @@ function setFiltersBasedOnURL() {
         keynoteCheckbox.checked = false;
         talkCheckbox.checked = false;
         workshopCheckbox.checked = true;
-    } else if (hostname === 'agenda.kcduk.io') {
-        // Show only Keynotes & Talks
-        keynoteCheckbox.checked = true;
-        talkCheckbox.checked = true;
-        workshopCheckbox.checked = false;
-    } else if (hostname === 'workshops.kcduk.io') {
-        // Show only Workshops
-        keynoteCheckbox.checked = false;
-        talkCheckbox.checked = false;
-        workshopCheckbox.checked = true;
+    } else if (document.referrer) {
+        // Check if we came from a known redirect domain
+        const referrer = document.referrer.toLowerCase();
+
+        if (referrer.includes('agenda.kcduk.io')) {
+            // Show only Keynotes & Talks
+            keynoteCheckbox.checked = true;
+            talkCheckbox.checked = true;
+            workshopCheckbox.checked = false;
+        } else if (referrer.includes('workshops.kcduk.io')) {
+            // Show only Workshops
+            keynoteCheckbox.checked = false;
+            talkCheckbox.checked = false;
+            workshopCheckbox.checked = true;
+        }
     }
     // Otherwise, keep default (all checked)
 }
